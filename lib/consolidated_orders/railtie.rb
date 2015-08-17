@@ -11,7 +11,7 @@ module ConsolidatedOrders
       )
       FeatureBase.inject_permission_records(
         ConsolidatedOrders,
-        RestrictCatalogFeatureDefinition.new.permissions
+        ConsolidatedOrdersFeatureDefinition.new.permissions
       )
     end
   end

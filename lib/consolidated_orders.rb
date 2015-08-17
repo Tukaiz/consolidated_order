@@ -9,7 +9,7 @@ module ConsolidatedOrders
     end
   end
 
-  class RestrictCatalogFeatureDefinition
+  class ConsolidatedOrdersFeatureDefinition
     include FeatureSystem::Provides
     def permissions
       [
