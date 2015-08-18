@@ -48,3 +48,4 @@ module ConsolidatedOrders
     end
   end
 end
+require 'consolidated_orders/railtie' if defined?(Rails)
