@@ -41,8 +41,8 @@ module ConsolidatedOrders
 
         accessible_co_ids = @user.consolidated_orders.pluck(:id)
 
-        can :read, ConsolidatedOrder, status: [1], id: accessible_co_ids
-        can :view, ConsolidatedOrder, status: [1], id: accessible_co_ids
+        can :read, ConsolidatedOrder, status: [0], id: accessible_co_ids
+        can :view, ConsolidatedOrder, status: [0], id: accessible_co_ids
       end
 
     end
