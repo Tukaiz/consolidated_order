@@ -11,7 +11,7 @@ Gem::Specification.new do |spec|
 
   spec.summary       = "Consolidated Order Feature"
   spec.description   = "Consolidated Order Feature"
-  spec.homepage      = "https://github.com/Tukaiz/restrict_site_addresses"
+  spec.homepage      = "https://github.com/Tukaiz/consolidated_orders"
   spec.license       = "MIT"
 
   spec.files         = `git ls-files -z`.split("\x0").reject { |f| f.match(%r{^(test|spec|features)/}) }
