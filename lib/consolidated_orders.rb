@@ -37,8 +37,6 @@ module ConsolidatedOrders
       def can_view_consolidated_orders
         cannot :read, ConsolidatedOrder
 
-        UserEditContext.call(@user, @site)
-
         accessible_co_ids = @user.consolidated_orders.pluck(:id)
 
         can :read, ConsolidatedOrder, status: [0], id: accessible_co_ids
